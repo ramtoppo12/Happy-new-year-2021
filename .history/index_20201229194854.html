@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome 2021</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    <div class="text text-1">2</div>
+    <div class="text text-2">0</div>
+    <div class="text text-3">2</div>
+    <div class="text text-4">0</div>
+
+    <div class="text text-5">1</div>
+    <button id="btn" onclick="handleClick()">Welcome</button>
+</body>
+<script>
+    const textFour = document.querySelector('.text-4');
+    const text5 = document.querySelector('.text-5');
+    const body = document.getElementById("body");
+    // function handleClick(){
+    //     textFour.classList.add('trans');
+    //     text5.classList.add('trans');
+
+    // }
+
+    const btn= document.getElementById("btn");
+    btn.addEventListener("click",()=>{
+        textFour.classList.add('trans');
+        text5.classList.add('trans');
+        body.classList.add('add-img')
+    })
+
+</script>
+</html>
